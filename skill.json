@@ -1,7 +1,7 @@
 {
   "skillName": "减脂增肌计算器",
   "version": "1.0.0",
-  "author": "你的名字/昵称",
+  "author": "Jaker",
   "description": "根据体重、体脂率、目标计算每日宏量营养素摄入，并生成一周训练计划。",
   "triggers": ["减脂", "增肌", "计算营养素", "训练计划", "减脂增肌"],
   "inputParameters": [
