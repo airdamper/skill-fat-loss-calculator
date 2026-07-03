@@ -43,8 +43,7 @@ reasonix install-source https://github.com/airdamper/skill-fat-loss-calculator
 # 在 Claude Code 项目下
 cd your-project
 mkdir -p .claude/skills
-# 将本技能链接到 Claude 技能目录
-ln -s /path/to/skill-fat-loss-calculator/SKILL.md .claude/skills/减脂增肌计算器.md
+cp /path/to/skill-fat-loss-calculator/SKILL.md .claude/skills/
 ```
 
 或在 Claude Code 设置中指向本仓库路径。
