@@ -1,14 +1,33 @@
 {
   "skillName": "减脂增肌计算器",
-  "version": "1.0.0",
+  "version": "2.1.0",
   "author": "Jaker",
-  "description": "根据体重、体脂率、目标计算每日宏量营养素摄入，并生成一周训练计划。",
-  "triggers": ["减脂", "增肌", "计算营养素", "训练计划", "减脂增肌"],
+  "description": "根据体重、体脂率、目标计算每日宏量营养素摄入，并生成一周训练计划。新增内脏脂肪消减因素权重、食物质量优先原则、基于压力/睡眠动态调整训练推荐，以及微量营养素关联指导（B族、维C、维D、铁、锌）。",
+  "triggers": [
+    "减脂",
+    "增肌",
+    "计算营养素",
+    "训练计划",
+    "减脂增肌",
+    "内脏脂肪",
+    "内脂",
+    "消内脏脂肪",
+    "腰围",
+    "食物质量",
+    "维生素",
+    "缺维生素",
+    "疲劳没劲",
+    "运动表现下降",
+    "平台期"
+  ],
   "inputParameters": [
     {"name": "weight", "type": "number", "required": true, "description": "体重(kg)"},
     {"name": "bodyFat", "type": "number", "required": false, "description": "体脂率(%)"},
     {"name": "goal", "type": "string", "required": true, "description": "减脂/增肌/维持"},
-    {"name": "activityLevel", "type": "string", "required": false, "description": "低/中/高"}
+    {"name": "activityLevel", "type": "string", "required": false, "description": "低/中/高"},
+    {"name": "waistline", "type": "number", "required": false, "description": "腰围(cm)"},
+    {"name": "stressLevel", "type": "number", "required": false, "description": "压力水平(1-10)"},
+    {"name": "sleepHours", "type": "number", "required": false, "description": "睡眠时长(h)"}
   ],
   "installHints": {
     "obsidian": "请将 `obsidian-note.md` 复制为 vault 内笔记，并在设置中添加到 Custom Prompt 的触发规则。",
